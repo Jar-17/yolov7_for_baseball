@@ -1,3 +1,23 @@
+# Overview
+This is the aplication of yolov7 on Baseball featuring swing and ball tracking, and there are UI for the features
+# Command
+## First, create a conda environment based on needed packages 
+`
+conda create -n name [YOUT_ENV_NAME] python=3.9
+` 
+## Second, install related packages
+`
+pip install -r requirements.txt
+`
+## Third, open the UI
+`
+python video/start_for_barrelpath.py
+`
+# Training
+The training method and details should just follow the original guidance 
+
+> the below is official description of YOLOv7 
+
 # Official YOLOv7
 
 Implementation of paper - [YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors](https://arxiv.org/abs/2207.02696)
