@@ -1,0 +1,13 @@
+train: ../yolov7/ball_det/train/images
+val: ../yolov7/ball_det/valid/images
+test: ../yolov7/ball_det/test/images
+
+nc: 2
+names: ['baseball bat', 'sports ball']
+
+roboflow:
+  workspace: ncku-wxiba
+  project: baseball_3-18_for_ball
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/ncku-wxiba/baseball_3-18_for_ball/dataset/2
