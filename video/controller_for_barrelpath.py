@@ -26,7 +26,7 @@ class MainWindow_controller(QMainWindow):
         self.ui.button_showimg.clicked.connect(self.showimg)
 
     def showimg(self):
-        img_path = "C:/Users/fubon/yolov7/path.png"
+        img_path = "./path.png"
         img = cv2.imread(img_path)
         img = cv2.resize(img,(960,540))
         cv2.namedWindow("barrel and ball path",0)
@@ -39,7 +39,7 @@ class MainWindow_controller(QMainWindow):
         command = ""
         if self.video_path :
             
-            command = f"python C:/Users/fubon/yolov7/detect_or_track_v2_922.py --conf-thres 0.5 --weights yolov7_training.pt --no-trace --view-img --source {self.video_path} --seed 2 --track --classes 32 34  --show-track --nobbox --nolabel --proportion 15 --framerate 240 --video_format 1 "
+            command = f"python ./detect_or_track_v2_922.py --conf-thres 0.5 --weights yolov7_training.pt --no-trace --view-img --source {self.video_path} --seed 2 --track --classes 32 34  --show-track --nobbox --nolabel --proportion 15 --framerate 240 --video_format 1 "
 
             print(command)
        
